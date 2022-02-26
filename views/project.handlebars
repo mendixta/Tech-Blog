@@ -1,0 +1,49 @@
+<div class = "viewing-post">
+  <div class = "view-single-post">
+      <!--- POST TITLE ---> 
+        <div class = "single-post-title">
+          <h4 class = "title is-3">
+              {{name}}
+          </h4>
+        </div>
+
+      <!--- POST DESCRIPTION ---> 
+      <div class = "single-post-desc">
+        <h4 class = "title is-4">
+              {{description}}
+        </h4>
+      </div>
+
+      <!--- POST CREATOR --->
+      <div class = "single-post-creator">
+        <h4 class = "title is-5">
+          Created by {{user.name}} on {{format_date date_created}}
+        </h4>
+      </div>
+
+      <!--- BUTTONS / OPTIONS --->
+    <div class = "single-post-btns">
+        <!-- COMMENT --> 
+        <div class = "comment">
+          <button class="button is-fullwidth is-outlined is-info">
+            <h4 class = "title is-6">
+                COMMENT
+            </h4>
+           </button>
+        </div>
+
+        <!-- GO BACK --> 
+        <div class = "go-back">
+          <button class="button is-fullwidth is-outlined is-info"> 
+            <a href="/"> 
+              <h4 class = "title is-6">
+                GO BACK
+              </h4>
+            </a>
+          </button>
+      </div>
+    </div> <!-- end of options -->
+
+
+  </div>
+</div>

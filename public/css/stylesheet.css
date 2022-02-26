@@ -1,0 +1,262 @@
+body {
+    background-color: rgb(231, 254, 255);
+}
+
+h1 {
+    font-family: Poppins;
+}
+ 
+h2 {
+    font-family: Poppins;  
+}
+
+h3 {
+    font-family: Poppins;
+    text-align: center;
+}
+
+h4 {
+    font-family: Poppins;  
+}
+
+h5 {
+    font-family: Poppins;  
+    
+}
+
+h6 {
+    font-family: Poppins;  
+}
+
+/* NAVBAR */
+.navbar {
+    background-color: rgb(159, 210, 214);
+    padding-bottom: 1rem;
+}
+
+.navbar-brand {
+    padding-left: 1rem;
+    padding-top: 2rem;
+}
+
+.navbar-end {
+    padding-top: 1rem;
+}
+
+.login-container {
+    padding-top: 1rem;
+    padding-right: 1rem;
+}
+
+.profile-container {
+    padding-top: 1rem;
+    padding-right: 1rem;
+}
+
+.logout-container {
+    padding-top: 1rem;
+    padding-right: 1rem;
+}
+
+/* PROFILE */
+.profile-title {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 35rem;
+}
+
+
+/* HOMEPAGE */
+.post-container {
+    padding-right: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+.single-post {
+    background-color: rgb(210, 249, 251);
+    padding-bottom: 5rem;
+    
+}
+
+.post-name {
+    background-color: rgb(159, 210, 214);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+.post-description {
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.post-creator {
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.view-post {
+    padding-top: 10px;
+    padding-left: 32rem;
+    padding-right: 32rem;
+}
+
+.dash-title {
+    padding-left: 35rem;
+    padding-bottom: 2rem;
+}
+
+/* VIEW SINGLE POST */
+.viewing-post {
+    padding-top: 17rem;
+    padding-bottom: 21rem;
+}
+
+.single-post-title {
+    background-color: rgb(159, 210, 214);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+.view-single-post {
+    background-color: rgb(210, 249, 251);
+    padding-bottom: 2rem;
+    
+}
+
+.single-post-desc {
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.single-post-creator {
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.single-post-btns {
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.comment {
+    padding-left: 32rem;
+    padding-right: 32rem;
+}
+
+.go-back {
+    padding-top: 10px;
+    padding-left: 32rem;
+    padding-right: 32rem;
+}
+
+/* CREATE POST */
+.project-list {
+    padding-bottom: 5rem;
+}
+
+.new-project-form{
+    padding-top: 2rem;
+    padding-left: 13rem;
+    padding-right: 13rem;
+}
+
+.your-name {
+    padding-left: 2rem;
+}
+
+.form-group {
+    padding-bottom: 1rem;
+}
+
+.create-new-post {
+    padding-left: 25rem;
+    padding-right: 25rem;
+    padding-bottom: 1rem;
+}
+
+.create-section {
+    padding-left: 15rem;
+    padding-right: 15rem;
+}
+
+.current-post-title {
+    padding-top: 10rem;
+    padding-left: 35rem;
+    padding-bottom: 4rem;
+
+}
+
+.your-post-section {
+    padding-left: 30rem;
+    padding-bottom: 2rem;
+}
+
+.your-post-single {
+    background-color: rgb(159, 210, 214);
+}
+
+/* LOGIN */
+.login-form{
+    padding-left: 13rem;
+    padding-right: 13rem;
+}
+
+.login-title {
+    padding-top: 18rem;
+    padding-left: 40rem;
+}
+
+.signup-title {
+    padding-top: 5rem;
+    padding-left: 50rem;
+}
+
+.signup-tle {
+    padding-bottom: 1rem
+}
+
+.signup-content {
+    padding-left: 13rem;
+}
+.login-btn {
+    padding-bottom: 1rem;
+    padding-right: 30rem;
+}
+
+.footer-login {
+    padding-top: 15rem;
+    padding-bottom: 3rem;
+}
+
+/* DROPDOWN IN LOGIN */
+.dropbtn {
+    font-size: 16px;
+    cursor: pointer;
+ }
+  
+ .dropBtn-sec{
+    padding-left: 13rem;
+ } 
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+.dropdown-content {
+display: none;
+  position: absolute;
+  background-color: #f6f6f6;
+  min-width: 950px;
+  overflow: auto;
+  border: 1px solid #ddd;
+  z-index: 1;
+  }
+  
+
+.dropdown a:hover {background-color: #ddd;}
+  
+.show {display:block}
+

@@ -1,0 +1,72 @@
+<!--- TITLE --->
+<div class = "profile-title">
+  <h2 class = "title is-2"> Create Post </h2>
+    <div class = "your-name">
+        <h2 class = "title is-4"> Welcome {{name}}!</h2>
+    </div>
+</div>
+
+
+
+  
+
+    <form class="form new-project-form">
+      <div class="form-group">
+        <!--- POST TITLE ---> 
+        <label for="project-name">
+           <h2 class = "title is-4"> Post Title: </h2>
+        </label>
+        <input class="input is-info" type="text" id="project-name" name="project-name" />
+      </div>
+
+      <!--- POST NUMBER ---> 
+      <div class="form-group">
+        <label for="project-funding">
+          <h2 class = "title is-4"> Post Number: </h2>
+        </label>
+        <input class="input is-info" type="number" id="project-funding" name="project-funding" />
+      </div>
+
+      <!--- POST COMMENT / DESCRIPTION ---> 
+      <div class="form-group">
+        <label for="project-desc">
+           <h2 class = "title is-4"> Add a Comment: </h2>
+        </label>
+        <textarea class="textarea is-info" id="project-desc" name="project-desc"></textarea>
+      </div>
+
+
+    <!--- BUTTON TO CREATE POST --->
+      <div class="create-btn">
+        <button type="submit" class="button is-fullwidth is-outlined is-info">
+          <h4 class = "title is-6"> CREATE POST </h4>
+        </button>
+      </div>
+    </form>
+
+<div class = "current-post-title">
+      <h2 class = "title is-2"> Your Posts!</h2>
+  </div>
+
+  {{#if projects.length}}
+  <div class="col-md-6 project-list">
+
+    {{#each projects as |project|}}
+    <div class="row mb-2">
+      <div class="col-md-8">
+        <h4><a href="/project/{{project.id}}">{{project.name}}</a></h4>
+      </div>
+      <div class="col-md-4">
+        <button class="button is-small is-danger is-outlined" 
+        data-id="{{project.id}}">DELETE</button>
+      </div>
+    </div>
+    {{/each}}
+  </div>
+  {{/if}}
+</div>
+
+
+  
+<script src="./js/profile.js"></script>
+

@@ -1,0 +1,17 @@
+[
+  {
+    "name": "JavaScript",
+    "description": "Did you know that JavaScript was made in 10 days? Wow!",
+    "needed_funding": 5000
+  },
+  {
+    "name": "Favorite CSS Framework",
+    "description": "Bulma is my favorite! I think it was used to make this tech blog!",
+    "needed_funding": 10000
+  },
+  {
+    "name": "Hello",
+    "description": "Im new here, how does this work again?",
+    "needed_funding": 800
+  }
+]

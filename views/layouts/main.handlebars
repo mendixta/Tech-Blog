@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel = "stylesheet" href = "/css/stylesheet.css"></link>
+   
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+
+    <!---  ORIGINAL STYLESHEETS --->
+    <title>Tech Blog</title>
+    {{!-- <link rel="stylesheet" href="/css/jass.css">
+    <link rel="stylesheet" href="/css/style.css"> --}}
+</head>
+<body>
+
+<!--- NAVBAR ---> 
+<nav class="navbar is-transparent">
+    <!--- TITLE ---> 
+     <div class="navbar-brand">
+        <a href = "/"> 
+          <h1 class = "title is-2"> Tech Blog 💻 </h1>
+        </a>
+    </div>
+
+    <!--- BUTTONS FOR LOGIN + LOGOUT ---> 
+  <div class="navbar-end">
+        <!-- Conditionally render login or logout links -->
+
+{{#if logged_in}}
+      <!--- SHOW CREATEPOST + LOGOUT IF LOGGED IN --->
+      <div class = "post-container">
+          <button class="button is-info is-outlined">
+              <a href="/profile">
+                <h2 class = "title is-4"> Create Post </h2>
+              </a> 
+          </button>
+      </div>
+
+      <div class = "logout-container">
+         <button class="button is-info is-outlined" id="logout">
+            <h2 class = "title is-4"> Logout </h2>
+        </button>
+      </div>
+                  
+{{else}}
+
+    <!-- SHOW LOGIN IF LOGGED OUT -->
+      <div class = "logout-container">
+        <button class="button is-info is-outlined"> 
+          <a href = "/login">  
+            <h2 class = "title is-4"> Login </h2>
+          </a>
+        </button>
+      </div>
+{{/if}}
+  </div>
+</nav> <!--- END --->
+ 
+<main class="container container-fluid mt-5">
+  <!-- Render the sub layout -->
+ 
+  {{{ body }}}
+</main>
+
+
+</div>
+
+
+  <!-- Render script for logged in users only -->
+  {{#if logged_in}}
+  <script src="/js/logout.js"></script>
+  {{/if}}
+</body>
+
+</html>

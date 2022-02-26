@@ -1,0 +1,46 @@
+<div class = "dash-title">
+    <h2 class = "title is-2"> Dashboard </h2>
+</div>
+{{#each projects as |project| }}
+
+<div class = "post-container"> 
+  <div class = "single-post">
+  <!--- POST NAME / TITLE --->
+    <div class = "post-name">
+      <h4 class = "title is-3"> 
+          {{project.name}}
+      </h4>
+    </div>
+
+  <!--- POST DESCRIPTION / COMMENT ---> 
+    <div class = "post-description">
+      <h4 class = "title is-4">
+          {{project.description}}
+      </h4>
+    </div>
+
+  <!--- POST CREATOR ---> 
+    <div class = "post-creator">
+      <h4 class = "title is-5"> 
+          Created by {{project.user.name}} on {{format_date project.date_created}}
+      </h4>
+    </div>
+
+  <!--- BUTTON VIEW POST ---> 
+    <div class = "view-post">
+      <button class="button is-fullwidth is-outlined is-info"> 
+            <a href="/project/{{project.id}}"> 
+              <h4 class = "title is-6">
+                VIEW POST
+              </h4>
+            </a>
+      </button>
+    </div>
+
+  </div>
+</div> <!--- END --->
+    
+
+</div>
+{{/each}}
+
